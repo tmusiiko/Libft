@@ -6,7 +6,7 @@
 /*   By: tmusiiko <tmusiiko@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/01 15:37:44 by taras             #+#    #+#             */
-/*   Updated: 2021/08/17 09:42:40 by tmusiiko         ###   ########.fr       */
+/*   Updated: 2021/08/17 17:12:36 by tmusiiko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,30 +33,39 @@ int	int_len(int n)
 	return (len);
 }
 
+char	*ft_count(char *s, int n, int len)
+{
+	int	i;
+
+	i = 0;
+	while (n != 0)
+	{
+		if (n < 0)
+		{
+			s[0] = '-';
+			n = n * -1;
+		}
+		s[len - 1 - i] = n % 10 + '0';
+		n = n / 10;
+		i++;
+	}
+	return (s);
+}
+
 char	*ft_itoa(int n)
 {
 	char	*str;
-	int		i;
 	int		len;
 
-	i = 0;
 	if (n == -2147483648)
 		return (ft_strdup("-2147483648"));
 	if (n == 0)
 		return (ft_strdup("0"));
 	len = int_len(n);
 	str = malloc(int_len(n) + 1);
-	while (n != 0)
-	{
-		if (n < 0)
-		{
-			str[0] = '-';
-			n = n * -1;
-		}
-		str[len - 1 - i] = n % 10 + '0';
-		n = n / 10;
-		i++;
-	}
+	if (!str)
+		return (0);
+	str = ft_count(str, n, len);
 	str[len] = '\0';
 	return (str);
 }

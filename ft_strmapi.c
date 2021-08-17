@@ -6,7 +6,7 @@
 /*   By: tmusiiko <tmusiiko@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/09 22:05:01 by taras             #+#    #+#             */
-/*   Updated: 2021/08/17 09:45:35 by tmusiiko         ###   ########.fr       */
+/*   Updated: 2021/08/17 15:15:45 by tmusiiko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 
 	i = 0;
 	dst = ft_strdup(s);
+	if (!dst)
+		return (0);
 	while (dst[i] != '\0')
 	{
 		dst[i] = (*f)(i, dst[i]);

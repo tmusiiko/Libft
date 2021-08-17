@@ -6,7 +6,7 @@
 #    By: tmusiiko <tmusiiko@student.42wolfsburg.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/26 23:46:54 by taras             #+#    #+#              #
-#    Updated: 2021/08/17 13:10:30 by tmusiiko         ###   ########.fr        #
+#    Updated: 2021/08/17 13:12:55 by tmusiiko         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,7 +36,7 @@ so: $(OBJ)
 	gcc -nostartfiles -shared -o libft.so $(OBJ)
 
 clean:
-				/bin/rm -f $(OBJ) libft.so
+				/bin/rm -rf $(OBJ) libft.so
 
 fclean:			clean
 				/bin/rm -f $(NAME)

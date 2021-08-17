@@ -6,7 +6,7 @@
 /*   By: tmusiiko <tmusiiko@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/12 00:03:55 by taras             #+#    #+#             */
-/*   Updated: 2021/08/17 13:00:08 by tmusiiko         ###   ########.fr       */
+/*   Updated: 2021/08/17 15:09:51 by tmusiiko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,10 +58,10 @@ char	**ft_split(char const *s, char c)
 
 	i = 0;
 	j = 0;
-	if (s == 0)
-		return (NULL);
 	strings = ft_count_words (s, c);
 	array = malloc ((strings + 1) * sizeof (char *));
+	if (s == 0 || !array)
+		return (0);
 	while (i < strings)
 	{
 		while (*s == c && *s != 0)
