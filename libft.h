@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taras <taras@student.42.fr>                +#+  +:+       +#+        */
+/*   By: tmusiiko <tmusiiko@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/28 14:36:34 by taras             #+#    #+#             */
-/*   Updated: 2021/08/16 23:06:37 by taras            ###   ########.fr       */
+/*   Updated: 2021/08/17 09:35:18 by tmusiiko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	*ft_memset(void *str, int c, size_t n);
 char	*ft_strchr(const char *s, int c);
 size_t	ft_strlcat(char *restrict d, const	char *restrict	s, size_t size);
 size_t	ft_strlcpy(char *dst, const char *src, size_t n);
-size_t	ft_strlen ( const char *str );
+size_t	ft_strlen( const char *str );
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strrchr(const char *s, int c);
 int		ft_tolower(int ch);
@@ -38,7 +38,7 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
-void	*ft_calloc (size_t num, size_t size);
+void	*ft_calloc(size_t num, size_t size);
 char	*ft_strdup(const char *s);
 char	*ft_strnstr(const char	*big, const char *little, size_t len);
 void	ft_putchar_fd(int n, int fd);

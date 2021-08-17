@@ -3,18 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taras <taras@student.42.fr>                +#+  +:+       +#+        */
+/*   By: tmusiiko <tmusiiko@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/01 15:37:44 by taras             #+#    #+#             */
-/*   Updated: 2021/08/02 15:56:46 by taras            ###   ########.fr       */
+/*   Updated: 2021/08/17 09:42:40 by tmusiiko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stddef.h>
-#include <stdlib.h>
 
-int	int_len (int n)
+int	int_len(int n)
 {
 	int	len;
 	int	n1;

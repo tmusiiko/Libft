@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taras <taras@student.42.fr>                +#+  +:+       +#+        */
+/*   By: tmusiiko <tmusiiko@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/08 00:23:44 by taras             #+#    #+#             */
-/*   Updated: 2021/07/11 23:55:41 by taras            ###   ########.fr       */
+/*   Updated: 2021/08/17 09:45:53 by tmusiiko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 char	*ft_strnstr(const char	*big, const char *little, size_t len)
 

@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: taras <taras@student.42.fr>                +#+  +:+       +#+         #
+#    By: tmusiiko <tmusiiko@student.42wolfsburg.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/26 23:46:54 by taras             #+#    #+#              #
-#    Updated: 2021/08/16 23:41:03 by taras            ###   ########.fr        #
+#    Updated: 2021/08/17 09:38:15 by tmusiiko         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,7 +38,3 @@ fclean:			clean
 				/bin/rm -f $(NAME)
 
 re:				fclean $(NAME)
-
-so:
-	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRC)
-	gcc -nostartfiles -shared -o libft.so $(OBJ)
