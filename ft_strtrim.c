@@ -6,7 +6,7 @@
 /*   By: tmusiiko <tmusiiko@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/02 18:07:50 by taras             #+#    #+#             */
-/*   Updated: 2021/08/17 12:53:54 by tmusiiko         ###   ########.fr       */
+/*   Updated: 2021/08/17 22:54:55 by tmusiiko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int	ft_end(char const *s1, char const *set)
 	len = ft_strlen(s1) - 1;
 	while (set[j] != '\0')
 	{
-		if (s1[len] == set[j])
+		if (s1[len] == set[j] && len > 0)
 		{
 			len--;
 			j = 0;
@@ -59,7 +59,5 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	i = ft_start (s1, set);
 	len = ft_end (s1, set);
-	if (s1[i] == 0)
-		return (ft_calloc(1, 1));
 	return (ft_substr(s1, i, len - i + 1));
 }
