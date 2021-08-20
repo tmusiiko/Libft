@@ -6,7 +6,7 @@
 #    By: tmusiiko <tmusiiko@student.42wolfsburg.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/26 23:46:54 by taras             #+#    #+#              #
-#    Updated: 2021/08/20 15:26:26 by tmusiiko         ###   ########.fr        #
+#    Updated: 2021/08/20 19:23:28 by tmusiiko         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,6 +37,6 @@ clean:
 fclean:			clean
 				rm -f $(NAME)
 
-re:				fclean $(NAME)
+re:				fclean all
 
 .PHONY: all clean fclean re
