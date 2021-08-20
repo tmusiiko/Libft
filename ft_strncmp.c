@@ -6,11 +6,11 @@
 /*   By: tmusiiko <tmusiiko@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/26 22:59:22 by taras             #+#    #+#             */
-/*   Updated: 2021/08/17 17:53:15 by tmusiiko         ###   ########.fr       */
+/*   Updated: 2021/08/20 14:39:10 by tmusiiko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

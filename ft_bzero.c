@@ -6,11 +6,11 @@
 /*   By: tmusiiko <tmusiiko@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/27 15:01:13 by taras             #+#    #+#             */
-/*   Updated: 2021/08/17 17:58:40 by tmusiiko         ###   ########.fr       */
+/*   Updated: 2021/08/20 14:38:25 by tmusiiko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 void	ft_bzero(void *str, size_t n)
 

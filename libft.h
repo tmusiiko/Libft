@@ -6,13 +6,12 @@
 /*   By: tmusiiko <tmusiiko@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/28 14:36:34 by taras             #+#    #+#             */
-/*   Updated: 2021/08/17 09:35:18 by tmusiiko         ###   ########.fr       */
+/*   Updated: 2021/08/20 15:22:08 by tmusiiko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-# include <stddef.h>
 # include <unistd.h>
 # include <stdlib.h>
 
@@ -32,7 +31,7 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strrchr(const char *s, int c);
 int		ft_tolower(int ch);
 int		ft_toupper(int ch);
-void	*ft_bzero(void *str, size_t n);
+void	ft_bzero(void *str, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
 void	*ft_memccpy(void *dest, const void *src, int c, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
